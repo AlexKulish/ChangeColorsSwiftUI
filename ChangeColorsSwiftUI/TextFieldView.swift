@@ -23,6 +23,7 @@ struct TextFieldView: View {
             .frame(width: 55, alignment: .trailing)
             .multilineTextAlignment(.trailing)
             .textFieldStyle(.roundedBorder)
+            .keyboardType(.decimalPad)
             .alert("Wrong format", isPresented: $showAlert, actions: {}) {
                 Text("Enter value from 0 to 255")
             }
